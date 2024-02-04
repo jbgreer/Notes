@@ -1,0 +1,12 @@
+* {https://devenv.sh}[devenv]
+
+  A means of creating a Nix development environment. May be used with {:direnv:} to automatically
+  invoke the environment when entering a directory.
+
+  For a Flake-based example:
+  @code
+  $ nix flake init --template github:cache/devenv
+  edit flake as required
+  $ nix develop --impure
+  $ devenv up
+  @end
